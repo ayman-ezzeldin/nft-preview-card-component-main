@@ -1,0 +1,98 @@
+:root {
+  --bg :#0c192b;
+  --card:#14273e;
+  --active:#28abb2;
+  --state:#697a8b;
+  --r : 14px ;
+}
+body {
+  background-color:var(--bg) ;
+  max-height: 100vh;
+}
+.card {
+  max-width: 350px;
+  border-radius: var(--r);
+  padding: 20px;
+  width: 100%;
+  margin: auto;
+  background-color: var(--card);
+}
+.card .i {
+  position: relative;
+}
+.card .i img {
+  width: 100%;
+  border-radius: var(--r);
+}
+.card .i .h {
+  position: absolute;
+  width: 100%;
+  height: 99%;
+  top: 0;
+  display: grid;
+  place-items: center;
+  background-color: rgba(41, 172, 179, 0.5);
+  border-radius: var(--r);
+  opacity: 0;
+  transition: all ease 0.5s;
+}
+.card .i .h:hover {
+    opacity: 1;
+    cursor: pointer;
+  }
+.card .i .h img {
+  width: 40px;
+  height: 40px;
+}
+
+h1 {
+  color: white;
+}
+h1:hover , h4 span:hover {
+  color: var(--active);
+}
+p {
+  color: var(--state);
+  font-size: 20px;
+  padding: 5px 0;
+  line-height: 1.6;
+}
+.time {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: solid 1px var(--state);
+  padding-bottom: 30px;
+}
+.time .t {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+.time .right {
+  color: var(--state);
+  font-size: 20px;
+}
+.time .left {
+  color: var(--active);
+  font-size: 20px;
+}
+.footer {
+  display: flex;
+  align-items: center;
+  padding-top: 8px;
+  color: var(--state);
+  font-size: 18px;
+}
+.footer img {
+  width: 40px;
+  height: 40px;
+  margin-right: 15px;
+  border: solid 1px white;
+  border-radius: 50%;
+}
+.footer span {
+  color: white;
+  margin-left: 4px;
+}
